@@ -116,13 +116,10 @@
                                                     <div class="px-2 lg:px-4 py-5 bg-white sm:p-6">
                                                         <div class="grid grid-cols-6 gap-6">
                                                             <div class="col-span-6 sm:col-span-6">
-                                                                <label for="YAPPY"
-                                                                    class="block text-sm font-medium text-gray-700">Telefono
-                                                                    Asociado a YAPPY
-                                                                </label>
 
-                                                                <input type="text" name="YAPPY" id="YAPPY"
-                                                                    autocomplete="given-name"
+
+                                                                <input required type="text" name="YAPPY" id="YAPPY"
+                                                                    autocomplete="given-name" placeholder="telefono"
                                                                     class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
 
                                                             </div>
@@ -168,23 +165,25 @@
                                                                 class="block text-sm font-medium text-gray-700">Nombre
                                                             </label>
 
-                                                            <input type="text" name="first_name" id="first_name"
-                                                                autocomplete="given-name"
+                                                            <input required type="text" name="first_name"
+                                                                id="first_name" autocomplete="given-name"
+                                                                placeholder="Nombre"
                                                                 class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
 
                                                         </div>
                                                         <div class="col-span-6 lg:col-span-3">
                                                             <label for="Apellidos"
                                                                 class="block text-sm font-medium text-gray-700">Apellidos</label>
-                                                            <input type="text" name="Apellidos" id="Apellidos"
-                                                                autocomplete="off"
+                                                            <input required type="text" name="Apellidos" id="Apellidos"
+                                                                placeholder="Apellido" autocomplete="off"
                                                                 class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
                                                         </div>
                                                         <div class="col-span-6 lg:col-span-3">
                                                             <label for="email_address"
                                                                 class="block text-sm font-medium text-gray-700">Correo
                                                                 electrónico</label>
-                                                            <input type="text" name="email_address" id="email_address"
+                                                            <input required type="text" name="email_address"
+                                                                placeholder="Correo" id="email_address"
                                                                 autocomplete="email"
                                                                 class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
                                                         </div>
@@ -192,11 +191,13 @@
                                                             <label for="Telefono"
                                                                 class="block text-sm font-medium text-gray-700">Teléfono</label>
                                                             <div class="flex space-x-2 ">
-                                                                <input type="text" name="countrycode" id="countrycode"
-                                                                    autocomplete="Telefono" placeholder="+507"
+                                                                <input required type="text" name="countrycode"
+                                                                    id="countrycode" autocomplete="Telefono"
+                                                                    placeholder="+507"
                                                                     class="mt-1 w-1/4 flex-shrink focus:ring-indigo-500 focus:border-indigo-500   shadow-sm sm:text-sm border-gray-300 rounded-md">
-                                                                <input type="text" name="Telefono" id="Telefono"
-                                                                    autocomplete="Telefono"
+                                                                <input required type="text" name="Telefono"
+                                                                    id="Telefono" autocomplete="Telefono"
+                                                                    placeholder="Telefono"
                                                                     class="mt-1 flex flex-grow focus:ring-indigo-500 focus:border-indigo-500 w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
                                                             </div>
                                                         </div>
@@ -235,7 +236,7 @@
                                                             <label for="Direccion_corta"
                                                                 class="block text-sm font-medium text-gray-700">Dirección
                                                             </label>
-                                                            <input type="text" name="Direccion_corta"
+                                                            <input required type="text" name="Direccion_corta"
                                                                 id="Direccion_corta" autocomplete="Direccion_corta"
                                                                 placeholder="Jr,calle"
                                                                 class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
@@ -247,8 +248,9 @@
                                                                 class="block text-sm font-medium text-gray-700">Número
                                                                 de
                                                                 tarjeta</label>
-                                                            <input type="text" name="card_number" id="card_number"
-                                                                autocomplete="card_number" placeholder="0000 0000 0000"
+                                                            <input required type="text" name="card_number"
+                                                                id="card_number" autocomplete="card_number"
+                                                                placeholder="0000 0000 0000"
                                                                 class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
                                                         </div>
 
@@ -303,7 +305,8 @@
                                                             <label for="last_name"
                                                                 class="block text-sm font-medium text-gray-700">
                                                                 CVV </label>
-                                                            <input type="text" name="CVV" id="CVV" autocomplete="CVV"
+                                                            <input required type="text" name="CVV" id="CVV"
+                                                                autocomplete="CVV"
                                                                 class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
                                                         </div>
 
@@ -314,14 +317,139 @@
 
                                                     </div>
                                                 </div>
-                                                <div class=" py-3  text-right sm:px-6">
-                                                    <div class=" py-3  w-full text-right ">
-                                                        <button type="submit"
+                                                <div class=" py-3  text-right sm:px-6 ">
+                                                    <div class=" py-3  w-full text-right  ">
+                                                        <button type="submit" data-modal-toggle="continuar"
                                                             class="inline-flex w-full justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white
                                                     bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                                                             Continuar
                                                         </button>
+                                                        <button type="submit" data-modal-toggle="error"
+                                                            class="my-2 inline-flex w-full justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white
+                                                    bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                                            Error
+                                                        </button>
 
+                                                        <!-- Small Modal -->
+                                                        <div id="continuar" tabindex="-1"
+                                                            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full justify-center items-center"
+                                                            aria-hidden="true">
+                                                            <div class="relative p-4 w-full max-w-md h-full md:h-auto">
+                                                                <!-- Modal content -->
+                                                                <div
+                                                                    class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                                                                    <!-- Modal header -->
+                                                                    <div
+                                                                        class="flex justify-between items-center p-5 rounded-t  dark:border-gray-600">
+                                                                        <h3
+                                                                            class="text-xl font-medium text-gray-900 dark:text-white">
+
+                                                                        </h3>
+                                                                        <button type="button"
+                                                                            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                                                                            data-modal-toggle="continuar">
+                                                                            <svg aria-hidden="true" class="w-5 h-5"
+                                                                                fill="currentColor" viewBox="0 0 20 20"
+                                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                                <path fill-rule="evenodd"
+                                                                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                                                                    clip-rule="evenodd"></path>
+                                                                            </svg>
+                                                                            <span class="sr-only">Close modal</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <!-- Modal body -->
+                                                                    <div
+                                                                        class="p-6 font-bold text-2xl space-y-6 flex flex-col justify-center items-center">
+
+                                                                        <lottie-player
+                                                                            src="https://assets6.lottiefiles.com/packages/lf20_v1rnvv8r.json"
+                                                                            background="transparent" speed="1"
+                                                                            class="h-44 -my-6" loop autoplay>
+                                                                        </lottie-player>
+                                                                        <div class="text-center">
+                                                                            Pago realizado con éxito
+
+                                                                        </div>
+                                                                        <div
+                                                                            class="flex justify-center text-base items-center">
+                                                                            <h1
+                                                                                class="text-center pb-2 font-medium text-primary  ">
+                                                                                Power by
+                                                                            </h1>
+                                                                            <img class="h-6"
+                                                                                src="src/images/logo_switch_soft_black 1.svg"
+                                                                                alt="">
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div id="error" tabindex="-1"
+                                                            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full justify-center items-center"
+                                                            aria-hidden="true">
+                                                            <div class="relative p-4 w-full max-w-xl h-full md:h-auto">
+                                                                <!-- Modal content -->
+                                                                <div
+                                                                    class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                                                                    <!-- Modal header -->
+                                                                    <div
+                                                                        class="flex justify-between items-center p-5 rounded-t  dark:border-gray-600">
+                                                                        <h3
+                                                                            class="text-xl font-medium text-gray-900 dark:text-white">
+
+                                                                        </h3>
+                                                                        <button type="button"
+                                                                            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                                                                            data-modal-toggle="error">
+                                                                            <svg aria-hidden="true" class="w-5 h-5"
+                                                                                fill="currentColor" viewBox="0 0 20 20"
+                                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                                <path fill-rule="evenodd"
+                                                                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                                                                    clip-rule="evenodd"></path>
+                                                                            </svg>
+                                                                            <span class="sr-only">Close modal</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <!-- Modal body -->
+
+                                                                    <div
+                                                                        class="p-6 space-y-6 flex flex-col justify-center items-center">
+                                                                        <lottie-player
+                                                                            src="https://assets6.lottiefiles.com/packages/lf20_gzlupphk.json"
+                                                                            background="transparent" speed="1"
+                                                                            class="h-32 -mt-12" loop autoplay>
+                                                                        </lottie-player>
+                                                                        </lottie-player>
+                                                                        <div class="text-2xl font-medium ">
+                                                                            Ha ocurrido un problema
+                                                                        </div>
+                                                                        <div
+                                                                            class="text-center text-base w-fit bg-red-200 rounded-md text-red-600">
+                                                                            NO SE HA PODIDO REALIZAR LA CONEXIÒN CON EL
+                                                                            PROCESADOR DE TARJETAS CODE-1548,
+                                                                            CardExpDate format is invalid
+
+                                                                        </div>
+                                                                        <div
+                                                                            class="flex justify-center text-base items-center">
+                                                                            <h1
+                                                                                class="text-center pb-2 font-medium text-primary  ">
+                                                                                Power by
+                                                                            </h1>
+                                                                            <img class="h-6"
+                                                                                src="src/images/logo_switch_soft_black 1.svg"
+                                                                                alt="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- Modal footer -->
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
 
                                                 </div>
@@ -348,35 +476,35 @@
                     <div class=" flex flex-col py-12  px-4 w-full rounded-sm space-y-4">
 
                         <div class="flex justify-between items-center ">
-                            <div class="flex  flex-col space-y-2 justify-center items-center">
-                                <img class="h-12" src="src/images/shortcut.svg" alt="">
-                                <p>Mi marca</p>
+                            <div class="flex font-medium      flex-col space-y-2 justify-center items-center">
+                                <img class="h-12" src="src/images/LOGO_PLUGINN-1.svg" alt="">
+                                <!-- <p>Mi marca</p> -->
                             </div>
-                            <p class="font-medim text-xl">200$</p>
+                            <p class=" p-2   font-bold  text-2xl">$8,185.50</p>
                         </div>
                         <h1 class="text-2xl font-medium">Resumen de compra</h1>
 
                         <div class="flex flex-col space-y-4">
 
-                            <div class="flex justify-between py-1 border-gray-100 border-b-2">
+                            <div class="flex justify-between py-1 border-gray-100 ">
                                 <h1>Referencia</h1>
                                 <p class="font-medium">16-000002394</p>
                             </div>
-                            <div class="flex justify-between py-1 border-gray-100 border-b-2">
-                                <h1>Subtotal.</h1>
+                            <div class="flex justify-between py-1 border-gray-100 ">
+                                <h1>Subtotal</h1>
                                 <p class="font-medium">$7,650.00</p>
                             </div>
-                            <div class="flex justify-between py-1 border-gray-100 border-b-2">
+                            <div class="flex justify-between py-1 border-gray-100 ">
                                 <h1>Descuento</h1>
                                 <p class="font-medium">$0.00</p>
                             </div>
-                            <div class="flex justify-between py-1 border-gray-100 border-b-2">
-                                <h1>IMPUESTO</h1>
+                            <div class="flex justify-between py-1 border-gray-100 ">
+                                <h1>Impuesto</h1>
                                 <p class="font-medium">$535.50</p>
                             </div>
-                            <div class="flex justify-between py-1 border-gray-100 border-b-2">
+                            <div class="flex text-2xl justify-between py-2 font-bold  border-gray-100 border-t-2">
                                 <h1>Total</h1>
-                                <p class="font-medium">$8,185.50</p>
+                                <p class="font-medium ">$8,185.50</p>
                             </div>
                         </div>
 
@@ -417,37 +545,47 @@
                                     <!-- Modal body -->
                                     <div class="p-6 space-y-6">
                                         <div class="flex justify-between items-center ">
-                                            <div class="flex  flex-col space-y-2 justify-center items-center">
-                                                <img class="h-12" src="src/images/shortcut.svg" alt="">
-                                                <p>Mi marca</p>
+                                            <div
+                                                class="flex font-medium      flex-col space-y-2 justify-center items-center">
+                                                <img class="h-12" src="src/images/LOGO_PLUGINN-1.svg" alt="">
+                                                <!-- <p>Mi marca</p> -->
                                             </div>
-                                            <p class="font-medim text-xl">200$</p>
+                                            <p class="font-bold  text-2xl">$8,185.50</p>
                                         </div>
                                         <h1 class="text-2xl font-medium">Resumen de compra</h1>
 
                                         <div class="flex flex-col space-y-4">
 
-                                            <div class="flex justify-between py-1 border-gray-100 border-b-2">
+                                            <div class="flex justify-between py-1 border-gray-100 ">
                                                 <h1>Referencia</h1>
                                                 <p class="font-medium">16-000002394</p>
                                             </div>
-                                            <div class="flex justify-between py-1 border-gray-100 border-b-2">
-                                                <h1>Subtotal.</h1>
+                                            <div class="flex justify-between py-1 border-gray-100 ">
+                                                <h1>Subtotal</h1>
                                                 <p class="font-medium">$7,650.00</p>
                                             </div>
-                                            <div class="flex justify-between py-1 border-gray-100 border-b-2">
+                                            <div class="flex justify-between py-1 border-gray-100 ">
                                                 <h1>Descuento</h1>
                                                 <p class="font-medium">$0.00</p>
                                             </div>
-                                            <div class="flex justify-between py-1 border-gray-100 border-b-2">
-                                                <h1>IMPUESTO</h1>
+                                            <div class="flex justify-between py-1 border-gray-100 ">
+                                                <h1>Impuesto</h1>
                                                 <p class="font-medium">$535.50</p>
                                             </div>
-                                            <div class="flex justify-between py-1 border-gray-100 border-b-2">
+                                            <div
+                                                class="flex text-2xl justify-between py-2 font-bold  border-gray-100 border-t-2">
                                                 <h1>Total</h1>
-                                                <p class="font-medium">$8,185.50</p>
+                                                <p class="font-medium ">$8,185.50</p>
                                             </div>
                                         </div>
+
+                                        <a href="#pay" class="py-2">
+                                            <button
+                                                class="lg:hidden w-full  text-white bg-green-600 px-4 py-3 rounded-xl">
+                                                Pagar
+                                            </button></a>
+
+
 
                                     </div>
                                     <!-- Modal footer -->
@@ -476,11 +614,11 @@
 
         <footer class="w-full h-16 bg-white border-t-2 border-white
             fixed left-0 bottom-0
-            flex justify-center items-center
+            flex justify-center items-center 
             text-white text-2xl
             ">
             <div class="flex justify-center items-center">
-                <h1 class="text-center  pb-2 font-medium text-primary text-2xl ">
+                <h1 class="text-center  pb-2 font-medium text-primary  ">
                     Power by
                 </h1>
                 <img class="h-8" src="src/images/logo_switch_soft_black 1.svg" alt="">
@@ -490,6 +628,7 @@
     </div>
     <script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
     <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 </body>
 
