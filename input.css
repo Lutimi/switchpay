@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    .payment-content {
+        @apply flex items-center sm:justify-center pt-3 pr-16 sm:p-8 gap-5 h-16 sm:h-20 w-full bg-white border-2 border-gray-200 
+        rounded-md transition peer-checked:border-blue-600 peer-checked:shadow-lg peer-checked:-translate-y-1;
+    }
+
+    .oc-h-screen {
+        max-height: 80vh;
+      }
+    .payment-text{
+      @apply  static  sm:absolute top-full sm:mt-1
+      text-center text-lg sm:text-xl 
+      w-auto sm:w-full
+      opacity-70 font-medium;
+    }
+    .payment-checked{
+        @apply absolute top-1/2 sm:-top-4 right-6 sm:-right-3
+        -translate-y-1/2 sm:translate-y-0 -mt-1 
+        bg-blue-500 text-white 
+        h-8 w-8 p-0.5
+         rounded-full transition peer-checked:scale-100 scale-0
+    }
+    .payment-image {
+       @apply  w-16 sm:w-16 sm:h-full object-center object-contain;
+    }
+}
+
+.form-radio {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    -webkit-print-color-adjust: exact;
+            color-adjust: exact;
+    display: inline-block;
+    vertical-align: middle;
+    background-origin: border-box;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    flex-shrink: 0;
+    border-radius: 100%;
+    border-width: 2px;
+  }
+  
+  .form-radio:checked {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='3'/%3e%3c/svg%3e");
+    border-color: transparent;
+    background-color: currentColor;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  @media not print {
+    .form-radio::-ms-check {
+      border-width: 1px;
+      color: transparent;
+      background: inherit;
+      border-color: inherit;
+      border-radius: inherit;
+    }
+  }
+  
+  .form-radio:focus {
+    outline: none;
+  }
+  
+  .form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23a0aec0'%3e%3cpath d='M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z'/%3e%3c/svg%3e");
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    -webkit-print-color-adjust: exact;
+            color-adjust: exact;
+    background-repeat: no-repeat;
+    padding-top: 0.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-position: right 0.5rem center;
+    background-size: 1.5em 1.5em;
+  }
+  
+  .form-select::-ms-expand {
+    color: #a0aec0;
+    border: none;
+  }
+  
+  @media not print {
+    .form-select::-ms-expand {
+      display: none;
+    }
+  }
+  
+  @media print and (-ms-high-contrast: active), print and (-ms-high-contrast: none) {
+    .form-select {
+      padding-right: 0.75rem;
+    }
+  }
+
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  
+  ::-webkit-scrollbar-track {
+    border-radius: 5px;
+    --tw-bg-opacity: 1;
+    background: #F5F5F5;
+  }
+  
+  /* Handle */
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    --tw-bg-opacity: 1;
+   background:  rgb(148, 148, 148);;
+  }
+  
+  /* Handle on hover */
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-600;
+  }
+  .scrollbar
+  {
+    margin-left: 30px;
+    float: left;
+    height: 300px;
+    width: 65px;
+    background: #F5F5F5;
+    overflow-y: scroll;
+    margin-bottom: 25px;
+  }

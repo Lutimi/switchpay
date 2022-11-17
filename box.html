@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+    <link rel="stylesheet" href="CSS/main.css">
+    <title>Switchpay</title>
+</head>
+
+<body>
+
+    <div class="flex flex-col space-y-2 ">
+
+        <div class="sgrid sgrid-cols-7 w-full h-full flex items-center justify-center flex-wrap px-4">
+            <!-- primera columna -->
+            <div class="col-span-4s order-2 lg:order-1 w-full lg:w-3/5 mb-4 lg:min-h-screen h-full border-gray-100  mx-auto 
+             flex flex-col justify-center items-center ">
+
+                <!-- LOGO -->
+                <div class="w-full mt-20 pt-1 pb-5">
+                    <div
+                        class="bg-white  text-white overflow-hidden p-4 rounded-md w-40 h-20 -mt-16 mx-auto shadow-sm flex justify-center items-center">
+                        <img clas="object-contain h-24 " src="src/images/LOGO_PLUGINN-1.svg" alt="">
+                    </div>
+                </div>
+
+
+                <ul class="grid grid-col-2 p-4 lg:p-0 w-full lg:w-3/4  gap-y-2 lg:gap-y-0 gap-x-4 
+                 md:grid-cols-2   -mb-px text-sm font-medium text-center " id="myTab" data-tabs-toggle="#myTabContent"
+                    role="tablist">
+
+                    <!-- VISA -->
+                    <li class=" w-full ">
+                        <button class=" rounded-t-lg w-full " id="visa-tab" data-tabs-target="#visa" type="button"
+                            role="tab" aria-controls="visa" aria-selected="true">
+
+                            <label for="payment" class="relative w-full cursor-pointer flex">
+                                <input class="peer hidden" type="radio" id="payment" name="payment" checked>
+
+                                <div class="payment-content relative flex justify-center items-center">
+
+                                    <div class="flex space-x-4  justify-center ">
+                                        <img class="h-24 payment-image" src="src/images/Frame 18.svg" alt="visa">
+
+                                    </div>
+
+                                    <p class="payment-text text-center">
+                                        VISA/MASTERCARD
+                                    </p>
+                                </div>
+                                <div class="payment-checked">
+                                    <img src="src/images/icon_check.svg" alt="">
+
+                                </div>
+                            </label></button>
+                    </li>
+
+                    <li class="w-full" role="">
+                        <button class="inline-block    w-full  " id="dashboard-tab" data-tabs-target="#dashboard"
+                            type="button" role="tab" aria-controls="dashboard" aria-selected="false">
+                            <!-- PAYMENT MASTERCARD -->
+                            <label for="payment4" class="relative w-full cursor-pointer flex">
+                                <input class="peer hidden" type="radio" id="payment4" name="payment">
+
+                                <div class="payment-content relative flex justify-center items-center ">
+
+                                    <div class="flex items-center justify-center">
+
+                                        <img class="  payment-image " src="src/images/yappy.png" alt="yappy">
+                                    </div>
+
+                                    <p class="payment-text text-center">
+                                        OTROS
+                                    </p>
+                                </div>
+
+
+
+                                <div class="payment-checked ">
+                                    <img src="src/images/icon_check.svg" alt="">
+
+                                </div>
+                            </label>
+                        </button>
+                    </li>
+                    <div class="hidden mt-24   lg:col-span-2 pb-4 rounded-lg dark:bg-gray-800" id="dashboard"
+                        role="tabpanel" aria-labelledby="dashboard-tab">
+                        <!-- Payment YAPPY -->
+                        <div class=" rounded-lg bg-white shadow-lg w-full  p-5 h-full text-gray-700 ">
+                            <div class="w-full pt-1 pb-5 bg-white ">
+                                <div
+                                    class="bg-indigo-500 text-white overflow-hidden rounded-full w-20 h-20 -mt-16 mx-auto shadow-lg flex justify-center items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                                        <path fill="currentColor" fill-rule="evenodd"
+                                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42a18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="mb-10">
+                                <h1 class="text-center font-bold text-xl uppercase">Telefono asociado a yappy</h1>
+                            </div>
+
+
+                            <div class="grid grid-cols mx-auto l w-full ">
+                                <div class="mt-0
+                                 sm:mt-0">
+                                    <div class="md:grid  md:gap-6">
+
+                                        <div class="mt-0 md:mt-0 md:col-span-2">
+                                            <form action="" method="POST">
+                                                <div class=" overflow-hidden sm:rounded-md">
+                                                    <div class="px-4 py-5 bg-white sm:p-6">
+                                                        <div class="grid grid-cols-6 gap-6">
+                                                            <div class="col-span-6 sm:col-span-6">
+                                                                <label for="YAPPY"
+                                                                    class="block text-sm font-medium text-gray-700">Telefono
+                                                                    Asociado a YAPPY
+                                                                </label>
+
+                                                                <input type="text" name="YAPPY" id="YAPPY"
+                                                                    autocomplete="given-name"
+                                                                    class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="w-full py-3  text-right ">
+                                                            <button type="submit"
+                                                                class="w-full justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white
+                                                        bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                                                Continuar
+                                                            </button>
+
+                                                        </div>
+                                                    </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </ul>
+                <div id="myTabContent pt-24 w-full  ">
+                    <div class="hidden mt-4 p-4 pb-8  
+                     rounded-lg dark:bg-gray-800 w-full" id="visa" role="tabpanel" aria-labelledby="visa-tab">
+                        <!-- Payment VISA -->
+                        <div class="w-full border-2 border-gray-100  mx-auto rounded-lg bg-white shadow-lg p-5 text-gray-700 overflow-hidden overflow-y-auto 
+                            lg:overflow-y-hidden oc-h-screen">
+                            <div class="grid grid-cols mx-auto w-full max-h-[70vh] overflow-y-auto  ">
+                                <div class="md:gridsm:mt-0  md:gap-3">
+                                    <div class=" md:mt-0 md:col-span-2">
+                                        <form action="" method="POST">
+                                            <div class=" overflow-y-auto ">
+                                                <div class="px-4 py-5 bg-white sm:p-6">
+                                                    <div class="grid grid-cols-6 gap-3">
+                                                        <div class="col-span-6 lg:col-span-3">
+                                                            <label for="first_name"
+                                                                class="block text-sm font-medium text-gray-700">Nombre
+                                                            </label>
+
+                                                            <input type="text" name="first_name" id="first_name"
+                                                                autocomplete="given-name"
+                                                                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+
+                                                        </div>
+                                                        <div class="col-span-6 lg:col-span-3">
+                                                            <label for="Apellidos"
+                                                                class="block text-sm font-medium text-gray-700">Apellidos</label>
+                                                            <input type="text" name="Apellidos" id="Apellidos"
+                                                                autocomplete="off"
+                                                                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                                        </div>
+                                                        <div class="col-span-6 lg:col-span-3">
+                                                            <label for="email_address"
+                                                                class="block text-sm font-medium text-gray-700">Correo
+                                                                electrónico</label>
+                                                            <input type="text" name="email_address" id="email_address"
+                                                                autocomplete="email"
+                                                                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                                        </div>
+                                                        <div class="col-span-6 lg:col-span-3">
+                                                            <label for="Telefono"
+                                                                class="block text-sm font-medium text-gray-700">Teléfono</label>
+                                                            <div class="flex space-x-2 ">
+                                                                <input type="text" name="countrycode" id="countrycode"
+                                                                    autocomplete="Telefono" placeholder="+507"
+                                                                    class="mt-1 w-1/4 flex-shrink focus:ring-indigo-500 focus:border-indigo-500   shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                                                <input type="text" name="Telefono" id="Telefono"
+                                                                    autocomplete="Telefono"
+                                                                    class="mt-1 flex flex-grow focus:ring-indigo-500 focus:border-indigo-500 w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-span-6 lg:col-span-3">
+                                                            <label for="country"
+                                                                class="block text-sm font-medium text-gray-700">País
+                                                            </label>
+                                                            <select id="Pais" name="Pais" autocomplete="Pais"
+                                                                class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                                                <option>Panama
+                                                                </option>
+                                                                <option>Costa
+                                                                    rica
+                                                                </option>
+                                                                <option>Colombia
+                                                                </option>
+                                                                <option>
+                                                                    Guatemala
+                                                                </option>
+                                                                <option>México
+                                                                </option>
+                                                                <option>El
+                                                                    Salvador
+                                                                </option>
+                                                                <option>
+                                                                    Venezuela
+                                                                </option>
+                                                                <option>Perú
+                                                                </option>
+                                                                <option>Hondura
+                                                                </option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-span-6 lg:col-span-3">
+                                                            <label for="Direccion_corta"
+                                                                class="block text-sm font-medium text-gray-700">Dirección
+                                                            </label>
+                                                            <input type="text" name="Direccion_corta"
+                                                                id="Direccion_corta" autocomplete="Direccion_corta"
+                                                                placeholder="Jr,calle"
+                                                                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                                        </div>
+
+
+                                                        <div class="col-span-6 sm:col-span-6">
+                                                            <label for="card_number"
+                                                                class="block text-sm font-medium text-gray-700">Número
+                                                                de
+                                                                tarjeta</label>
+                                                            <input type="text" name="card_number" id="card_number"
+                                                                autocomplete="card_number" placeholder="0000 0000 0000"
+                                                                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                                        </div>
+
+
+                                                        <div class="col-span-6 lg:col-span-3 ">
+                                                            <label
+                                                                class="block text-sm font-medium text-gray-700">Expiration
+                                                                date</label>
+                                                            <div>
+                                                                <select
+                                                                    class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                                                    <option value="01">01 - January</option>
+                                                                    <option value="02">02 - February</option>
+                                                                    <option value="03">03 - March</option>
+                                                                    <option value="04">04 - April</option>
+                                                                    <option value="05">05 - May</option>
+                                                                    <option value="06">06 - June</option>
+                                                                    <option value="07">07 - July</option>
+                                                                    <option value="08">08 - August</option>
+                                                                    <option value="09">09 - September</option>
+                                                                    <option value="10">10 - October</option>
+                                                                    <option value="11">11 - November</option>
+                                                                    <option value="12">12 - December</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-span-6 lg:col-span-3">
+                                                            <label class="block text-sm font-medium text-gray-700">Año
+                                                                de
+                                                                expiración</label>
+                                                            <div>
+                                                                <select
+                                                                    class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                                                    <option value="2020">2020</option>
+                                                                    <option value="2021">2021</option>
+                                                                    <option value="2022">2022</option>
+                                                                    <option value="2023">2023</option>
+                                                                    <option value="2024">2024</option>
+                                                                    <option value="2025">2025</option>
+                                                                    <option value="2026">2026</option>
+                                                                    <option value="2027">2027</option>
+                                                                    <option value="2028">2028</option>
+                                                                    <option value="2029">2029</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+
+
+
+                                                        <div class="col-span-6 sm:col-span-6  ">
+                                                            <label for="last_name"
+                                                                class="block text-sm font-medium text-gray-700">
+                                                                CVV </label>
+                                                            <input type="text" name="CVV" id="CVV" autocomplete="CVV"
+                                                                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                                        </div>
+
+
+
+
+
+
+                                                    </div>
+                                                </div>
+                                                <div class=" py-3  text-right sm:px-6">
+                                                    <div class=" py-3  w-full text-right ">
+                                                        <button type="submit"
+                                                            class="inline-flex w-full justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white
+                                                    bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                                            Continuar
+                                                        </button>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+            <!-- segunda -->
+            <div
+                class="col-span-3s lg:order-2 w-full lg:w-2/5   lg:min-h-screen h-full flex items-center justify-center">
+                <div
+                    class="w-full lg:w-3/4 bg-white shadow-md mt-8 border-2 border-gray-100   h-full px-4 flex flex-col justify-center items-center">
+                    <div class=" py-12  px-4 w-full rounded-sm space-y-4">
+
+                        <div class="flex justify-between items-center ">
+                            <div class="flex  flex-col space-y-2 justify-center items-center">
+                                <img class="h-12" src="src/images/shortcut.svg" alt="">
+                                <p>Mi marca</p>
+                            </div>
+                            <p class="font-medim text-xl">200$</p>
+                        </div>
+                        <h1 class="text-2xl font-medium">Resumen de compra</h1>
+
+                        <div class="flex flex-col space-y-4">
+
+                            <div class="flex justify-between py-1 border-gray-100 border-b-2">
+                                <h1>Referencia</h1>
+                                <p class="font-medium">16-000002394</p>
+                            </div>
+                            <div class="flex justify-between py-1 border-gray-100 border-b-2">
+                                <h1>Subtotal.</h1>
+                                <p class="font-medium">$7,650.00</p>
+                            </div>
+                            <div class="flex justify-between py-1 border-gray-100 border-b-2">
+                                <h1>Descuento</h1>
+                                <p class="font-medium">$0.00</p>
+                            </div>
+                            <div class="flex justify-between py-1 border-gray-100 border-b-2">
+                                <h1>IMPUESTO</h1>
+                                <p class="font-medium">$535.50</p>
+                            </div>
+                            <div class="flex justify-between py-1 border-gray-100 border-b-2">
+                                <h1>Total</h1>
+                                <p class="font-medium">$8,185.50</p>
+                            </div>
+                        </div>
+
+                        <button class="w-full border-2 text-gray-500 border-gray-300 px-4 py-3 rounded-xl">
+                            Ver detalle
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <footer class="w-full h-16 bg-white border-t-2 border-white
+            fixed left-0 bottom-0
+            flex justify-center items-center
+            text-white text-2xl
+            ">
+            <div class="flex justify-center items-center">
+                <h1 class="text-center  pb-2 font-medium text-primary text-2xl ">
+                    Power by
+                </h1>
+                <img class="h-8" src="src/images/logo_switch_soft_black 1.svg" alt="">
+            </div>
+
+        </footer>
+    </div>
+    <script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+
+</body>
+
+</html>
