@@ -29,7 +29,9 @@
        @apply  w-16 sm:w-16 sm:h-full object-center object-contain;
     }
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .form-radio {
     -webkit-appearance: none;
        -moz-appearance: none;
