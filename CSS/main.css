@@ -2413,6 +2413,10 @@ html {
   margin-top: 0.5rem;
 }
 
+.mt-12 {
+  margin-top: 3rem;
+}
+
 .block {
   display: block;
 }
@@ -2499,6 +2503,34 @@ html {
 
 .w-6 {
   width: 1.5rem;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.w-\[full\] {
+  width: full;
+}
+
+.w-\[8\] {
+  width: 8;
+}
+
+.w-\[80\] {
+  width: 80;
+}
+
+.w-\[80\%\] {
+  width: 80%;
+}
+
+.w-\[80v\] {
+  width: 80v;
+}
+
+.w-\[80vw\] {
+  width: 80vw;
 }
 
 .max-w-md {
@@ -2797,6 +2829,11 @@ html {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .pt-1 {
@@ -3212,6 +3249,10 @@ html {
     margin-top: 0px;
   }
 
+  .md\:mt-24 {
+    margin-top: 6rem;
+  }
+
   .md\:grid {
     display: grid;
   }
@@ -3226,6 +3267,10 @@ html {
 
   .md\:h-auto {
     height: auto;
+  }
+
+  .md\:w-\[80vw\] {
+    width: 80vw;
   }
 
   .md\:grid-cols-2 {
@@ -3258,6 +3303,10 @@ html {
     grid-column: span 3 / span 3;
   }
 
+  .lg\:hidden {
+    display: none;
+  }
+
   .lg\:min-h-screen {
     min-height: 100vh;
   }
@@ -3274,6 +3323,10 @@ html {
     width: 40%;
   }
 
+  .lg\:w-full {
+    width: 100%;
+  }
+
   .lg\:gap-y-0 {
     row-gap: 0px;
   }
@@ -3284,5 +3337,14 @@ html {
 
   .lg\:p-0 {
     padding: 0px;
+  }
+
+  .lg\:p-4 {
+    padding: 1rem;
+  }
+
+  .lg\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
