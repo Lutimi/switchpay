@@ -28,8 +28,8 @@
                 </div>
 
 
-                <ul class="grid grid-col-2 p-4 lg:p-0 w-full lg:w-3/4  gap-y-2 lg:gap-y-0 gap-x-4 
-                 md:grid-cols-2   -mb-px text-sm font-medium text-center " id="myTab" data-tabs-toggle="#myTabContent"
+                <ul class="grid grid-col-3 p-4 lg:p-0 w-full lg:w-3/4  gap-y-2 lg:gap-y-0 gap-x-4 
+                 md:grid-cols-3   -mb-px text-sm font-medium text-center " id="myTab" data-tabs-toggle="#myTabContent"
                     role="tablist">
 
                     <!-- VISA -->
@@ -57,6 +57,7 @@
                                 </div>
                             </label></button>
                     </li>
+
 
                     <li class="w-full" role="">
                         <button class="inline-block    w-full  " id="dashboard-tab" data-tabs-target="#dashboard"
@@ -86,7 +87,33 @@
                             </label>
                         </button>
                     </li>
-                    <div class="hidden mt-24   lg:col-span-2 pb-4 rounded-lg dark:bg-gray-800" id="dashboard"
+                    <!-- VISAsadasdas -->
+                    <li class=" w-full ">
+                        <button class=" rounded-t-lg w-full " id="dashboard-tab" data-tabs-target="#dashboard"
+                            type="button" role="tab" aria-controls="visa2" aria-selected="true">
+
+                            <label for="payment5" class="relative w-full cursor-pointer flex">
+                                <input class="peer hidden" type="radio" id="payment5" name="payment">
+
+                                <div class="payment-content relative flex justify-center items-center">
+
+                                    <div class="flex space-x-4  justify-center ">
+                                        <img class="h-24 payment-image"
+                                            src="src/images/mastercard_old_payment_method_icon_142751.svg" alt="visa">
+
+                                    </div>
+
+                                    <p class="payment-text text-center">
+                                        otro
+                                    </p>
+                                </div>
+                                <div class="payment-checked">
+                                    <img src="src/images/icon_check.svg" alt="">
+
+                                </div>
+                            </label></button>
+                    </li>
+                    <div class="hidden mt-24   lg:col-span-3 pb-4 rounded-lg dark:bg-gray-800" id="dashboard"
                         role="tabpanel" aria-labelledby="dashboard-tab">
                         <!-- Payment YAPPY -->
                         <div class=" rounded-lg bg-white shadow-lg w-full  p-5 h-full text-gray-700 ">
@@ -148,6 +175,8 @@
 
                         </div>
                     </div>
+
+
                 </ul>
                 <div id="myTabContent pt-24 w-full  ">
                     <div class="hidden mt-4 p-4 pb-8  
