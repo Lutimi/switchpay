@@ -28,12 +28,12 @@
                 </div>
 
 
-                <ul class="grid grid-col-2 p-4 lg:p-0 w-full lg:w-3/4  gap-y-2 lg:gap-y-0 gap-x-4 
+                <ul class="grid grid-col-2 p-4 lg:p-0 w-full lg:w-3/4 space-y-8 md:space-y-0 gap-y-2 lg:gap-y-0 gap-x-4 
                  md:grid-cols-2   -mb-px text-sm font-medium text-center " id="myTab" data-tabs-toggle="#myTabContent"
                     role="tablist">
 
                     <!-- VISA -->
-                    <li class=" pb-2 w-full ">
+                    <li class=" pb- w-full ">
                         <button class=" rounded-t-lg w-full " id="visa-tab" data-tabs-target="#visa" type="button"
                             role="tab" aria-controls="visa" aria-selected="true">
 
@@ -43,7 +43,7 @@
                                 <div class="payment-content relative flex justify-center items-center">
 
                                     <div class="flex space-x-4  justify-center ">
-                                        <img class="h-24 payment-image" src="src/images/Frame 18.svg" alt="visa">
+                                        <img class="  payment-image" src="src/images/visa.svg" alt="visa">
 
                                     </div>
 
@@ -58,7 +58,7 @@
                             </label></button>
                     </li>
 
-                    <li class="w-full" role="">
+                    <li class="w-full  md:pt-0 lg:pt-0" role="">
                         <button class="inline-block    w-full  " id="dashboard-tab" data-tabs-target="#dashboard"
                             type="button" role="tab" aria-controls="dashboard" aria-selected="false">
                             <!-- PAYMENT MASTERCARD -->
@@ -69,7 +69,7 @@
 
                                     <div class="flex items-center justify-center">
 
-                                        <img class="  payment-image " src="src/images/yappy.png" alt="yappy">
+                                        <img class=" h-8 payment-imag " src="src/images/yappy.svg" alt="yappy">
                                     </div>
 
                                     <p class="payment-text text-center">
@@ -89,7 +89,7 @@
                     <div class="hidden mt-12 md:mt-24   md:col-span-2 pb-4 rounded-lg dark:bg-gray-800" id="dashboard"
                         role="tabpanel" aria-labelledby="dashboard-tab">
                         <!-- Payment YAPPY -->
-                        <div class=" rounded-lg bg-white shadow-lg w-full  p-5 h-full text-gray-700 ">
+                        <div class=" rounded-lg bg-white shadow-lg w-full md:mt-12 p-5 h-full text-gray-700 ">
                             <!-- <div class="w-full pt-1 pb-5 bg-white ">
                                 <div
                                     class="bg-indigo-500 text-white overflow-hidden rounded-full w-20 h-20 -mt-16 mx-auto shadow-lg flex justify-center items-center">
@@ -100,7 +100,7 @@
                                     </svg>
                                 </div>
                             </div> -->
-                            <div class=" md:b-10">
+                            <div class=" md:pt-12 ">
                                 <h1 class="text-center font-bold text-xl uppercase">Telefono asociado a yappy</h1>
                             </div>
 
